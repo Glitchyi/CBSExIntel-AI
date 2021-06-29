@@ -10,12 +10,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer,CountVectorizer
 qsn=input("Enter quries separated by ';' ")
 
 listified_qsn = qsn.split(';')
-
-stop_words = set(stopwords.words('english'))
- 
-
  
 '''
+stop_words = set(stopwords.words('english'))
 filtered_list = [w for w in word_tokens if not w.lower() in stop_words]
  
 filtered_list = []

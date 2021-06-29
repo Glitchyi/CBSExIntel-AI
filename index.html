@@ -1,5 +1,55 @@
 <html>
-    <div class="topnav">
-        <input type="text" placeholder="Input your queries seperated by ;"> 
-      </div>
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+  </script>
+  <style>
+    textarea{
+      text-align: center;
+      width: 400px; 
+      margin-top: 250px; 
+      height: 200;
+      border-style: dashed;
+      border-width: 12px;
+      border-color: teal;
+      font-family: 'consolas';
+      font-weight: bold;
+      font-style: italic;
+      font-size: 15;
+      color: green;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      hyphens: auto;
+    }
+    textarea::placeholder{
+      color: teal;
+      text-align: center;
+      font-family: 'consolas';
+      font-style: italic;
+      font-size: 15;
+    }
+    button{
+      text-align: center;
+      width: 400px; 
+      margin-top: 10px; 
+      height: 27;
+      border-style: dashed;
+      border-width: 2px;
+      border-color: teal;
+      font-family: 'consolas';
+      font-weight: bold;
+      font-style: italic;
+      font-size: 15;
+
+    }
+  </style>
+  <div align="center">
+    <textarea name="Qbox" id="" cols="30" rows="10" placeholder="Input your queries seperated by ; "></textarea>
+  </div>
+  <div align="center">
+    <button type="button" onclick="myFunction()">Submit</button>
+  </div>
 </html>
+
+
